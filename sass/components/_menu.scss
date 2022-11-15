@@ -1,0 +1,65 @@
+.menu-container {
+
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        max-width: $mobile;
+        padding: 48px 40px;
+        background-color: $color-white;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%) scale(1);
+        transition: transform 2250ms $animation-timing-function;
+
+
+        &.is-open {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 96px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        gap: 315px;
+    }
+}
+
+.button__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.button__open,
+.button__close {
+    @extend %btn;
+    background-color: transparent;
+    padding: 0;
+
+
+    &:focus .icon-menu,
+    &:focus .icon-cross,
+    &:active .icon-menu,
+    &:active .icon-cross {
+        fill: $color-accent;
+    }
+
+    @media (min-width: ($tablet)) {
+        display: none;
+    }
+
+}
+
+.icon-cross,
+.icon-menu {
+    fill: $color-title;
+    transition: fill 250ms $animation-timing-function;
+}
+

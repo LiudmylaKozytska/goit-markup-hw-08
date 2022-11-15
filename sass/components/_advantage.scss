@@ -1,0 +1,50 @@
+/* Переваги */
+
+.advantage__list {
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }    
+}
+
+.advantage__item {
+    & p {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 3 * 30px) / 4);
+        flex-wrap: nowrap;
+    }
+}
+
+.advantage__title {
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: $color-title;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        text-align: left;
+    }
+}
+
+.advantage__icon--background {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $button-background-color;
+
+    @include flex-center;
+
+}
+

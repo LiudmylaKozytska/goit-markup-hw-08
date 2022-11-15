@@ -1,0 +1,100 @@
+.header__list--position {
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin: 0;
+    }
+}
+
+.header__contacts {
+    @media (max-width: 767px)  {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    @media (min-width: $tablet) {
+        display: block;
+    }
+
+    @media (min-width: $desktop) {
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+}
+
+.header__link {
+    @extend %link;
+    font-weight: 500;
+    color: $color-title;
+
+    @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 32px;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+
+    width: 100%;
+
+}
+}
+    
+@media screen and (min-width: $tablet) {
+    .header__link {
+        font-size: 14px;
+        line-height: 1.1428;
+        padding: 32px 0;
+    }
+
+    .header__link--position {
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        color: currentColor;
+    }   
+
+    .header__link--color {
+        position: relative;
+        color: $color-accent;
+    }  
+}
+
+@media screen and (min-width: $desktop) {
+    .header__link--position {
+        padding: 32px 0;
+    }
+}
+
+
+
+@media screen and (min-width: $tablet) {
+    .current-home::after {
+        @include underline ($color-accent);
+    }
+}
+
+.header__icon {
+    margin-right: 10px;
+    fill: currentColor;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__contacts-mail {
+        font-size: 24px;
+        color: $color-text;
+        margin-bottom: 64px;
+    }
+
+    .header__contacts-tel {
+        font-size: 34px;
+        line-height: 1.1764;
+        color: $color-accent;
+    }
+}

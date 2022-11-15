@@ -1,0 +1,41 @@
+@mixin logo_color ($color) {
+    color: $color;
+}
+
+.header__logo {
+    @include logo ($color-accent);
+
+    padding: 16px 0;
+
+        &--color {
+        @include logo ($color-black);
+    }
+
+    @media screen and(min-width: $tablet) {
+        padding: 26px 0;
+        
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 24px 0;
+    }
+
+}
+
+.footer__logo {
+    @include logo ($color-accent);
+
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+
+
+    &--color {
+        @include logo ($color-white);
+    }
+
+    @media screen and (min-width: $desktop) {
+        text-align: left;
+    }
+
+}

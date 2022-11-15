@@ -1,0 +1,26 @@
+.portfolio__overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__text--overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    
+    @include overlay ($transform:translateY(100%));
+
+    padding: 77px 24px;
+    font-size: 18px;
+    line-height: 1.5555;
+    color: $color-white;
+
+    .portfolio__link:hover &,
+    .portfolio__link:focus &,
+    .portfolio__link:active & {
+        @include overlay ($transform: translateY(0));
+    }
+
+}

@@ -1,0 +1,27 @@
+.team__soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team__soc-link {
+    @extend %link;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    @include flex-center;
+    @include animation__bg-color ($color:transparent);
+    @include hover-bg ($color-accent);
+
+}
+
+.team__soc-icon {
+    fill: $color-icon;
+    transition: fill 250ms $animation-timing-function;
+}
+
+.team__soc-link:hover .team__soc-icon,
+.team__soc-link:focus .team__soc-icon {
+    fill: $color-white;
+}

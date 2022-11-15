@@ -1,0 +1,56 @@
+// /* команда */
+
+.team__section {
+    background-color: $button-background-color;
+}
+
+.team__list {
+
+    @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+}
+
+.team__item {
+    background-color: $color-white;
+    width: 100%;
+    box-shadow: $modal-shadow;
+    border-radius: 4px;
+    
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 3 * 30px) / 4);
+    }
+}
+
+.team__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
+
+.team__excerpt {
+    padding: 30px 0 24px 0;
+
+}
+
+.team__header {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom:  10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-title;
+}
+
+.team__text {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+

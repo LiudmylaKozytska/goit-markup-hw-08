@@ -1,0 +1,38 @@
+.footer__header {
+    text-align: center;
+    font-size: inherit;
+    line-height: 1.1428;
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    @media screen and (min-width: $desktop) {
+        text-align: left;
+    }
+}
+
+.footer-soc__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+}
+
+.footer-soc__link {
+    @extend %link;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    @include flex-center;
+    @include animation__bg-color ($color: rgba(255, 255, 255, 0.1));    
+    @include hover-bg ($color-accent);
+}
+
+.footer__icon {
+    fill: $color-white;
+}

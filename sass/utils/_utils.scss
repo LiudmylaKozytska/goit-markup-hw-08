@@ -1,0 +1,86 @@
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+@mixin underline ($color-accent) {
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    border-radius: 2px;
+    background-color: $color-accent;
+}
+
+@mixin animation__color ($color) {
+    color: $color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin animation__bg-color ($color) {
+    background-color: $color;
+    transition: background-color 250ms $animation-timing-function;
+}
+
+@mixin overlay ($transform) {
+    transform: ($transform);
+    transition: transform 250ms $animation-timing-function;
+}
+
+@mixin hover ($color) {
+    &:hover,
+    &:focus,
+    &:active {        
+        color: $color;
+        fill: $color;
+}
+}
+@mixin hover-bg ($color) {
+    &:hover,
+    &:focus,
+    &:active {        
+    background-color: $color;
+}
+}
+
+@mixin logo ($color) {
+    color: ($color);
+    text-decoration: $none-decoration;
+    font-family: $logo-font;
+    font-weight: 700;
+    font-size: $font-size-logo-mob;
+    line-height: $line-height-logo-mob;
+
+    @media screen and (min-width: $desktop) {
+            font-size: $font-size-logo-desk;
+            line-height: $line-height-logo-desk;
+        }
+}
+
+@mixin button {
+    background-color: $color-accent;
+    box-shadow: $main-button-shadow;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $color-white;
+    
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

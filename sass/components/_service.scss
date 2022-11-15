@@ -1,0 +1,39 @@
+// /* чим ми займаємось */
+
+.service__section {
+    padding-bottom: 94px;
+
+    @media (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.service__list {
+    @extend %link;
+    justify-content: space-between;
+}
+
+.service__item {
+    display: block;
+    position: relative;
+
+}
+
+.service__overlay {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    @include flex-center;
+
+}
+
+.service__text {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.1428;
+    color: $color-white;
+
+}

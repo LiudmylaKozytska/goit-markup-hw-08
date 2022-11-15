@@ -1,0 +1,60 @@
+// /* підвал */
+.footer__section {
+    background-color: $footer-background-color;
+    padding: 60px 0;
+}
+
+.footer__tablet {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }  
+
+    @media screen and (min-width: $desktop) {
+        gap: 90px;
+    }    
+}
+
+.footer__container {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+.footer__list {
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        text-align: left;
+    }
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1199px) {
+    .footer__item:last-child {
+        margin-bottom: 60px;
+    }
+}
+
+.footer__address {
+    display: block;
+    @extend %link;
+    color: $color-white;
+    font-style: normal;
+}
+
+.footer__contacts {
+    display: block;
+    @extend %link;
+    color: $contacts-text-color;
+    font-style: normal;
+
+}
+
+
