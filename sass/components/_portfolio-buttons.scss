@@ -1,33 +1,21 @@
 .portfolio__menu {
     margin-bottom: 40px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 
     @media screen and (min-width: $tablet) {
-        display: flex;
-        gap: 8px;
         justify-content: center;
         margin-bottom: 30px;
     }
-}
 
-.portfolio_menu--btn {
-    display: flex;
-
-    &:not(:last-child) {
-        @media screen and (max-width: 767px) {
-            margin-bottom: 15px;
-        }    
-    }
-
-    @media screen and (min-width: $tablet) {
-        gap: 8px;
-        margin-bottom: 0;
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
     }
 }
-
 
 .portfolio__button {
     @extend %btn;
-    margin-right: 8px;
     padding: 6px 22px;
     font-family: inherit;
     background-color: $button-background-color;

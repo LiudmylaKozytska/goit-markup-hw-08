@@ -5,7 +5,7 @@
     border-bottom: 1px solid #ECECEC;
 
     &__container {
-        width: 100%;
+        // width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -20,11 +20,5 @@
             justify-content: space-between;
             align-items: center;
         }
-    }
-}
-
-.header__navigation li:last-child {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 300px;
     }
 }

@@ -1,4 +1,10 @@
 .header__list--position {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 32px;
+    }
 
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -31,8 +37,6 @@
     color: $color-title;
 
     @media screen and (max-width: 767px) {
-    display: block;
-    margin-bottom: 32px;
     font-size: 40px;
     line-height: 1.175;
     letter-spacing: 0.02em;

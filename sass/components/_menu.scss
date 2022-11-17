@@ -2,10 +2,13 @@
 
     @media screen and (max-width: 767px) {
         display: none;
-        position: absolute;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        overflow: scroll;
         top: 0;
-        width: 100%;
-        max-width: $mobile;
+        width: 100vw;
+        height: 100vh;
         padding: 48px 40px;
         background-color: $color-white;
         z-index: 1;
@@ -15,9 +18,10 @@
 
 
         &.is-open {
-            display: block;
+            display: flex;
         }
     }
+
 
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -29,6 +33,7 @@
     @media screen and (min-width: $desktop) {
         gap: 315px;
     }
+
 }
 
 .button__close {

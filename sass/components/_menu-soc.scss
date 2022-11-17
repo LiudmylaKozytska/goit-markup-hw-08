@@ -1,8 +1,16 @@
+.menu__contacts {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        
+    }
+}
+
 .header__soc-list {   
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 10px;
 
     @media screen and (min-width: $tablet) {
         display: none;
@@ -13,7 +21,6 @@
     @extend %link;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
 
     font-weight: 500;
     font-size: 18px;

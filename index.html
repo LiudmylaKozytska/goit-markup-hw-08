@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet" >
   <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-  <link rel="stylesheet" href="./css/main.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" >
   <title>Document</title>
 </head>
 
@@ -36,13 +36,13 @@
                 <li><a class="link header__link" href="#">Контакти</a></li>
               </ul>
             </nav>
+            <div class="menu__contacts">
             <ul class="list header__list--position header__contacts">
               <li><a class="link header__link header__link--position header__contacts-mail" href="mailto:info@devstudio.com">
                   <svg class="header__icon" width="16" height="12">
                     <use href="./images/icons.svg#icon-letter"></use>
                   </svg><span>info@devstudio.com</span></a></li>
-              <li><a class="link header__link header__link--position header__contacts-tel class=" header__soc-decor""
-                  href="tel:+380961111111">
+              <li><a class="link header__link header__link--position header__contacts-tel" href="tel:+380961111111">
                   <svg class="header__icon" width="10" height="16">
                     <use href="./images/icons.svg#icon-smartphone"></use>
                   </svg><span>+38 096 111 11 11</span></a></li>
@@ -61,6 +61,7 @@
                 <a class="link header__soc-link" href="">LinkedIn <span class="header__soc-decor"> </span></a>
               </li>
             </ul>
+            </div>
           </div>
       </div>
     </div>
@@ -122,15 +123,16 @@
           <li class="service__item">
             <picture>
               <source srcset="./images/boxone.jpg 1x, ./images/boxone@2x.jpg 2x" type="image/jpeg"
-                media="(min-width: 1200px)" />
-            <img src="images/boxone.jpg" alt="Написання коду" width="370">
+                media="(min-width: 1200px)" >
+              <img src="images/boxone.jpg" alt="Написання коду" width="370">
             </picture>
             <div class="service__overlay">
               <p class="service__text">Десктопні додатки</p>
             </div>
           </li>
           <li class="service__item">
-            <source srcset="./images/boxtwo.jpg 1x, ./images/boxtwo@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+            <picture>
+            <source srcset="./images/boxtwo.jpg 1x, ./images/boxtwo@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)">
             <img src="images/boxtwo.jpg" alt="Створення макету на телефон" width="370">
             </picture>
             <div class="service__overlay">
@@ -138,7 +140,8 @@
             </div>
           </li>
           <li class="service__item">
-            <source srcset="./images/boxthree.jpg 1x, ./images/boxthree@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+            <picture>
+            <source srcset="./images/boxthree.jpg 1x, ./images/boxthree@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)">
             <img src="images/boxthree.jpg" alt="Вибір кольору" width="370">
             </picture>
           <div class="service__overlay">
@@ -155,10 +158,13 @@
           <ul class="list team__list">
             <li class="team__item">
               <picture>
-                <source srcset="./images/team_mob-ihor.jpg 1x, ./images/team_mob-ihor@2x.jpg 2x" type="image/jpeg" media="(max-width: 767px)"/>
-                <source srcset="./images/team_tab-ihor.jpg 1x, ./images/team_tab-ihor@2x.jpg 2x" type="image/jpeg" media="(max-width: 1199px)"/>
-                <source srcset="./images/team_desk-ihor.jpg 1x, ./images/team_desk-ihor@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)"/>
-              <img src="./images/team_mob-ihor.jpg" alt="Фото Ігоря Дем'яненко" sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
+                <source srcset="./images/team_mob-ihor.jpg 1x, ./images/team_mob-ihor@2x.jpg 2x" type="image/jpeg"
+                  media="(max-width: 767px)" >
+                <source srcset="./images/team_tab-ihor.jpg 1x, ./images/team_tab-ihor@2x.jpg 2x" type="image/jpeg"
+                  media="(max-width: 1199px)" >
+                <source srcset="./images/team_desk-ihor.jpg 1x, ./images/team_desk-ihor@2x.jpg 2x" type="image/jpeg"
+                  media="(min-width: 1200px)" >
+              <img src="./images/team_mob-ihor.jpg" alt="Фото Ігоря Дем'яненко">
               </picture>
               <div class="team__excerpt">
                 <h3 class="team__header">Ігор Дем'яненко</h3>
@@ -190,12 +196,12 @@
             <li class="team__item">
               <picture>
                 <source srcset="./images/team_mob-olha.jpg 1x, ./images/team_mob-olha@2x.jpg 2x" type="image/jpeg"
-                  media="(max-width: 767px)" />
+                  media="(max-width: 767px)" >
                 <source srcset="./images/team_tab-olha.jpg 1x, ./images/team_tab-olha@2x.jpg 2x" type="image/jpeg"
-                  media="(max-width: 1199px)" />
+                  media="(max-width: 1199px)" >
                 <source srcset="./images/team_desk-olha.jpg 1x, ./images/team_desk-olha@2x.jpg 2x" type="image/jpeg"
-                  media="(min-width: 1200px)" />
-              <img src="images/portrettwo.jpg" alt="Фото Ольги Рєпіної" sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
+                  media="(min-width: 1200px)" >
+              <img src="images/portrettwo.jpg" alt="Фото Ольги Рєпіної" >
               </picture>
               <div class="team__excerpt">
                 <h3 class="team__header">Ольга Рєпіна</h3>
@@ -227,12 +233,12 @@
             <li class="team__item">
               <picture>
                 <source srcset="./images/team_mob-mykola.jpg 1x, ./images/team_mob-mykola@2x.jpg 2x" type="image/jpeg"
-                  media="(max-width: 767px)" />
+                  media="(max-width: 767px)" >
                 <source srcset="./images/team_tab-mykola.jpg 1x, ./images/team_tab-mykola@2x.jpg 2x" type="image/jpeg"
-                  media="(max-width: 1199px)" />
+                  media="(max-width: 1199px)" >
                 <source srcset="./images/team_desk-mykola.jpg 1x, ./images/team_desk-mykola@2x.jpg 2x" type="image/jpeg"
-                  media="(min-width: 1200px)" />
-              <img src="images/portretthree.jpg" alt="Фото Миколи Тарасова" sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
+                  media="(min-width: 1200px)" >
+              <img src="images/portretthree.jpg" alt="Фото Миколи Тарасова" >
               </picture>
               <div class="team__excerpt">
                 <h3 class="team__header">Микола Тарасов</h3>
@@ -264,12 +270,13 @@
             <li class="team__item">
               <picture>
                 <source srcset="./images/team_mob-myhailo.jpg 1x, ./images/team_mob-myhailo@2x.jpg 2x" type="image/jpeg"
-                  media="(max-width: 767px)" />
+                  media="(max-width: 767px)" >
                 <source srcset="./images/team_tab-myhailo.jpg 1x, ./images/team_tab-myhailo@2x.jpg 2x" type="image/jpeg"
-                  media="(max-width: 1199px)" />
+                  media="(max-width: 1199px)" >
                 <source srcset="./images/team_desk-myhailo.jpg 1x, ./images/team_desk-myhailo@2x.jpg 2x" type="image/jpeg"
-                  media="(min-width: 1200px)" />
-              <img src="images/portretfour.jpg" alt="Фото Михайла Єрмакова" sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
+                  media="(min-width: 1200px)" >
+              <img src="images/portretfour.jpg" alt="Фото Михайла Єрмакова" >
+              </picture>
               <div class="team__excerpt">
                 <h3 class="team__header">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -373,7 +380,7 @@
         <h3 class="footer__header">Підпишіться на розсилку</h3>
         <form class="footer__form">
           <label class="footer__label">
-            <input type="email" name="email" placeholder="E-mail" class="footer__mail" required />
+            <input type="email" name="email" placeholder="E-mail" class="footer__mail" required >
           </label>
           <button type="submit" class="btn button footer__button">Підписатися<svg class="footer__icon" width="24"
               height="24">
@@ -395,7 +402,7 @@
         <form name="feedback" class="modal__feedback">
           <label for="user-name" class="modal__label">Ім'я</label>
           <div class="modal__svg--position">
-          <input id="user-name" type="user-name" class="modal__input">
+          <input id="user-name" type="text" class="modal__input">
           <svg class="modal__icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-person"></use>
           </svg>
@@ -417,10 +424,10 @@
           <label for="feedback" class="modal__label">Коментар</label>
           <textarea 
           class="modal__input modal__input--comment"
-          name="feedback" 
+          id="feedback" 
           placeholder="Введіть текст" rows="5"></textarea>
           <div class="modal__checkbox">
-          <input class="modal__checkbox--input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox" />
+          <input class="modal__checkbox--input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox" >
           <label class="modal__checkbox--label" for="terms-checkbox"><svg class="modal__checkbox--icon" width="16px" height="15px">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>

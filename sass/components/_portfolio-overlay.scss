@@ -10,7 +10,7 @@
     top: 0;
     background-color: rgba(33, 150, 243, 0.9);
     
-    @include overlay ($transform:translateY(100%));
+    @include overlay ($transform:translateY(101%));
 
     padding: 77px 24px;
     font-size: 18px;
